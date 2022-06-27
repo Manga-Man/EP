@@ -1,0 +1,16 @@
+{
+  "name": "espurrs_palace",
+  "version": "1.0.0",
+  "description": "pokemon anime streaming site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js && node server.js"
+  },
+  "author": "M4nga#4659",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  }
+}
