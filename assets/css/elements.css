@@ -1,0 +1,21 @@
+.divider {
+    color: white;
+    text-align: center;
+}
+
+.card-text {
+    transition: 2s;
+}
+.card-text:hover {
+   color:rgb(244, 241, 241) !important;
+   transform: none;
+}
+
+.card {
+    transition: 1s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}

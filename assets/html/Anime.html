@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+
+
+<body>
+    <!-- Loading screen -->
+    <div class="se-pre-con"></div>
+    
+<body>
+
+<!--the loading and other scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.26.0/DPlayer.min.js"></script>
+<script src="./js/search.js"></script>
+
+<!-- Loader script -->
+<script>
+    $(window).load(function() {
+          // Animate loader off screen
+          $(".se-pre-con").fadeOut("slow");;
+       });
+</script>
+
+<!-- css -->
+<link rel="icon" href="https://localwaifu.b-cdn.net/logo.png">
+<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="elements.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="./assets/css/main.css" rel="stylesheet"/>
+<link href="./assets/css/vendor/aos.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+
+
+<!-- font (ubuntu)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+
+<!-- Javascript (style) -->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+
+<!-- header stuff ig-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container" height="5%">
+    <img class="rounded-circle shadow" src="https://localwaifu.b-cdn.net/logo.png" width="50" style="margin-left: -10%;">
+    <a class="navbar-brand" href="#"><i class="fas fa-anchor mr-2"></i><strong>Espurr's</strong> Palace</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown-1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Anime.html">Anime</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Manga</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://wowthemes.net" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Discord</a><a class="dropdown-item" href="#">Twitter</a><a class="dropdown-item" href="#">Youtube</a>
+        </div>
+        </li>
+    </div>
+  </div>
+  </nav>
+
+  <!-- page uwu -->
+<!-- jumbotron simple -->
+<div class="jumbotron jumbotron-lg bg-dark jumbotron-fluid">
+	<div class="container text-center text-white h-100">
+		<h1 class="display-2"><strong>Anime</strong></h1>
+    <h5 class="font-weight-light">Watch the <strong>Pokémon Anime </strong>Series and Movies Online!</h5>
+	</div>
+  <hr class="divider" width="20%" color="white" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col">
+        <input type="text" class="form-control input-round" id="search-input" placeholder="Search..." style="margin-left: 50%;">
+    </div>
+    <div class="col">
+        <button type="submit" class="btn btn-primary btn-round" id="search-btn" style="margin-left: 50%; margin-bottom: 30px;" onclick="getInput()">Search</button>
+    </div>
+</div>
+
+  <!-- Card Overlay -->
+<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0" style="width: 260px; display: inline-block; margin-left: 2%;">
+  <img class="card-img" src="https://localwaifu.b-cdn.net/104391l.jpg" alt="Card image">
+  <div class="card-img-overlay d-flex align-items-center text-center">
+      <div class="card-body">
+          <h5 class="card-title">Pokémon (2019)</h5>
+          <p class="card-text text-muted" style="text-align: left;">
+               <strong>Type: TV<br>
+                Episodes: 100+<br>
+                Status: Currently Airing<br>
+                Aired: Nov 17, 2019 to ?</strong>
+          </p>
+          <a href="#" class="btn btn-primary btn-round">Sub</a>
+          <a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a>
+      </div>
+  </div>
+</div>
+
+<!-- Card Overlay -->
+<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0" style="width: 260px; display: inline-block; margin-left: 2%;">
+  <img class="card-img" src="https://localwaifu.b-cdn.net/110197l.jpg" alt="Card image">
+  <div class="card-img-overlay d-flex align-items-center text-center">
+      <div class="card-body">
+          <h5 class="card-title">Pokémon: Secrets of the Jungle</h5>
+          <p class="card-text text-muted" style="text-align: left;">
+               <strong>Type: Movie<br>
+                Episodes: 1<br>
+                Status: Finished Airing<br>
+                Aired: Dec 25, 2020</strong>
+          </p>
+          <a href="#" class="btn btn-primary btn-round">Sub</a>
+          <a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a>
+      </div>
+  </div>
+</div>
+<!-- Card Overlay -->
+<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0" style="width: 260px; display: inline-block; margin-left: 2%;">
+  <img class="card-img" src="https://localwaifu.b-cdn.net/104762l.jpg" alt="Card image">
+  <div class="card-img-overlay d-flex align-items-center text-center">
+      <div class="card-body">
+          <h5 class="card-title">Pokémon Twilight Wings</h5>
+          <p class="card-text text-muted" style="text-align: left;">
+               <strong>Type: ONA<br>
+                Episodes: 7<br>
+                Status: Finished Airing<br>
+                Aired: Jan 15, 2020 to Aug 6, 2020</strong>
+          </p>
+          <a href="#" class="btn btn-primary btn-round">Sub</a>
+          <a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a>
+      </div>
+  </div>
+</div>
+
+
+
+</body>

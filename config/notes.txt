@@ -1,0 +1,4 @@
+<div class="card bg-dark overlay overlay-black text-white shadow-lg border-0" style="width: 280px !important; margin-left: 2%; float: left;">
+		<h5 class="font-weight-light">Watch the <strong>Pokémon Anime </strong>Series and Movies Online!</h5>
+
+<hr class="divider" width="20%" color="white" style="margin-top: 20px;">

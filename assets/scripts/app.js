@@ -10,9 +10,14 @@ var cssPath = path.join(__dirname, '.././css');
 
 app.use(express.static(cssPath));
 
+var htmlPath = path.join(__dirname, '.././html');
+
+app.use(express.static(htmlPath));
+
 //routing
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../html/index.html'))
+app.get('/Anime.html:tagId', (req, res) => {
+    res.sendFile(path.join(__dirname + 'Anime.html'))
+    console.log(req.params.tagId)
 });
 
 const port = 9000;
