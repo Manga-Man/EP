@@ -1,0 +1,2 @@
+language = "bash"
+run = "cd assets/scripts && node app"
