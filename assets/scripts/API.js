@@ -1,25 +1,11 @@
-//dependencies
+//etc. example.com/user/000000?sex=female
 const express = require('express');
 const config = require('../../config/config.json');
 const path = require('path');
-const fs = require('fs');
+const fs = require('fs')
 
 //onstart
 const app = express();
-
-var cssPath = path.join(__dirname, '.././css');
-
-app.use(express.static(cssPath));
-
-var htmlPath = path.join(__dirname, '.././html');
-
-app.use(express.static(htmlPath));
-
-//routing
-app.get('/Anime.html:tagId', (req, res) => {
-    res.sendFile(path.join(__dirname + 'Anime.html'))
-    console.log(req.params.tagId)
-});
 
 app.get('/post/:pwd', function(req, res) {
 
@@ -39,17 +25,14 @@ app.get('/post/:pwd', function(req, res) {
 
     var reqparse = request.split('%')
     console.log(`${reqparse[0]}, ${reqparse[1]} `)
-    fs.createWriteStream()
   } else {
     console.log('unauthorized, rejecting request...')
   }
 
 })
 
-
 const port = 8080;
 
 app.listen(port, () => {
-    console.log(`app launched at port ${port}`)
+    console.log(`API launched at ${port}`)
 });
-
