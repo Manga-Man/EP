@@ -7,9 +7,19 @@ const app = express();
 
 const port = 8080;
 
-var cssPath = path.join(__dirname, '.././css');
+//example.com/user/000000?sex=female
 
-app.use(express.static(cssPath));
+app.get('/user/:id', function(req, res) {
+
+    const query = req.query;// query = {sex:"female"}
+  
+    const params = req.params; //params = {id:"000000"}
+    res.send(`var: ${query} \n id: ${params.id}`)
+    console.log(query.var)
+    console.log(params.id)
+  
+  })
+  
 
 app.listen(port, () => {
     console.log(`server launched at port ${port}`)

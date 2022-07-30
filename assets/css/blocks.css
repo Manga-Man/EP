@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    line-height: 150%;
+}
+
+.player {
+    min-height: 540px;
+    display: flex; /* or inline-flex */
+}
+
+#iframe {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.uwu {
+    width: 100%;
+    min-height: 700px;
+    background-color: darkslateblue;
+    display: flex;
+}
+
+.info-box {
+    background-color: #212529;
+    width: 68%;
+    min-height: 480px;
+    border-radius: 3px;
+    margin: 0 2% auto;
+    display: flex;
+}
+
+.info-box-text {
+    font-size: 1.6vw;
+    float: left;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.8%;
+}

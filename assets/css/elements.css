@@ -19,3 +19,17 @@
 .card:hover {
     transform: scale(1.02);
 }
+
+.info-box {
+    margin-top: -120px;
+    margin-left: 2.5%;
+    width: 68.2vw;
+    height: 60vh;
+    float: left;
+    background-color: #212529;
+    border-radius: 3px;
+}
+
+body {
+    min-width: 5000fr;
+}
