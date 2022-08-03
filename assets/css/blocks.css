@@ -19,8 +19,8 @@ body {
 
 .uwu {
     width: 100%;
-    min-height: 700px;
-    background-color: darkslateblue;
+    min-height: 600px;
+    background-color: #343A40;
     display: flex;
 }
 
@@ -34,9 +34,15 @@ body {
 }
 
 .info-box-text {
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     float: left;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 0.8%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.artplayer-app {
+    width: 900;
+    height: 500;
 }
