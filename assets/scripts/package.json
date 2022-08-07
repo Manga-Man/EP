@@ -11,8 +11,12 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.1",
+<<<<<<< HEAD
     "fs": "^0.0.1-security",
     "input": "^1.0.1",
+=======
+    "fs": "0.0.1-security",
+>>>>>>> 56308570419497739e117dc233347b8f6248ae10
     "path": "^0.12.7"
   }
 }

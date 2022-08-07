@@ -21,6 +21,7 @@
 }
 
 .info-box {
+<<<<<<< HEAD
     margin-top: -120px;
     margin-left: 2.5%;
     width: 68.2vw;
@@ -33,3 +34,49 @@
 body {
     min-width: 5000fr;
 }
+=======
+  width: 68.2vw;
+  height: 60vh;
+  margin-left: 2.5%;
+  margin-top: -10%;
+  background-color: #212529;
+  float: left;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.center-text {
+  text-align: center;
+  color: #fff;
+}
+
+.info-poster {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.info-text-p {
+  color: white;
+  float: left;
+  font-size: 16px;
+  margin-left: 22%;
+  margin-right: 10px;
+  margin-top: -28% !important;
+}
+
+.info-text {
+  float: left;
+}
+
+.current-ep {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.btn-primary-modal {
+  width: 80%;
+  margin-left: 10%;
+}
+
+>>>>>>> 56308570419497739e117dc233347b8f6248ae10
