@@ -113,11 +113,49 @@
                 Status: Finished Airing<br>
                 Aired: Dec 25, 2020</strong>
           </p>
-          <a href="#" class="btn btn-primary btn-round">Sub</a>
+          <a href="#" class="btn btn-primary btn-round" data-toggle="modal" data-target="#Modal001">Sub</a>
           <a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a>
-      </div>
-  </div>
+
+
+
+
 </div>
+  </div>
+</div>  
+  <!-- The modal itself (01)-->
+  <div class="modal fade" id="Modal001" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="pb-4 pr-4 pl-4 text-center">
+            <h3 class="heading mt-4">Episodes</h3>
+            <p id="ep_list">
+              <script>
+                fetch('./json/list02.json')
+                .then((response) => response.json())
+                .then((data) => {
+                  data.Episodes.forEach(e => {
+                    var i = e.split(':')
+                    document.getElementById('ep_list').innerHTML += '<a href="https://' + i[1] +'" class="btn btn-primary" style="margin-right: 10px; margin-top: 15px;">Ep ' + i[0] + '</a>'
+                  });
+                });
+              </script>
+            </p>
+            <p>
+              <em class="text-muted">Report Missing Episodes on our <a href="https://discord.com/invite/z28VSVJj?utm_source=Discord%20Widget&utm_medium=Connect">Discord</a></em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+
 <!-- Card Overlay -->
 <div class="card bg-dark overlay overlay-black text-white shadow-lg border-0" style="width: 260px; display: inline-block; margin-left: 2%;">
   <img class="card-img" src="https://localwaifu.b-cdn.net/104762l.jpg" alt="Card image">
@@ -130,8 +168,8 @@
                 Status: Finished Airing<br>
                 Aired: Jan 15, 2020 to Aug 6, 2020</strong>
           </p>
-          <a href="#" class="btn btn-primary btn-round">Sub</a>
-          <a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a>
+          <a href="#" class="btn btn-primary btn-round">Coming Soon~</a>
+          <!--<a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a> -->
       </div>
   </div>
 </div>
