@@ -88,7 +88,7 @@ async function askStuff() {
 
   <!-- main content [jumbotron] -->
   <!-- jumbotron simple -->
-<div class="jumbotron jumbotron-lg bg-dark jumbotron-fluid" style="margin-bottom: 0;">
+<div class="jumbotron jumbotron-lg bg-dark jumbotron-fluid" style="margin-bottom: 0; padding-bottom: 0;">
 	<div class="container text-center text-white h-100">
 		<h5 class="font-weight-light">Pokemon (2019) [Sub], Episode ${Episode_number}</h5>
  
@@ -266,6 +266,16 @@ async function askStuff() {
 </style>
 <!-- end of container ****-->
 </div>
+<!-- minimal footer -->
+<footer class="bg-black pb-5 pt-4">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-12">			
+        <span class="d-block mt-3 text-gray">©	2022 Espurr's Palace, &nbsp; All Rights Reserved.</span>
+      </div>
+    </div>
+  </div>
+  </footer> 
     `)
     }
   }
