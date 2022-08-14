@@ -15,12 +15,13 @@ async function askStuff() {
     if(conformation === 'y') {
         console.log('confirmed! prcessing input and creating the file...')
 
-    var file = fs.createWriteStream(`./files/pokemon-journeys_dub${Episode_number}.html`)
+    var file = fs.createWriteStream(`./files/pokemon-journeys_sub${Episode_number}.html`)
     file.write(`
     <!DOCTYPE html>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
 
 <title>Pokemon (2019) [Sub], Episode ${Episode_number}</title>
+<link rel="icon" href="https://localwaifu.b-cdn.net/logo.png">
 <body>
     <!-- Loading screen -->
     <div class="se-pre-con"></div>
@@ -277,6 +278,7 @@ async function askStuff() {
   </div>
   </footer> 
     `)
+    console.log('file created!!')
     }
   }
 
