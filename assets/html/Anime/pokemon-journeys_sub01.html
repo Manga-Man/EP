@@ -189,7 +189,7 @@
                 .then((data) => {
                   data.Episodes.forEach(e => {
                     var i = e.split(':')
-                    document.getElementById('ep_list').innerHTML += '<a href="https://' + i[1] +'" class="btn btn-primary" style="margin-right: 10px; margin-top: 15px;">Ep ' + i[0] + '</a>'
+                    document.getElementById('ep_list').innerHTML += '<a href="' + i[1] +'" class="btn btn-primary" style="margin-right: 10px; margin-top: 15px;">Ep ' + i[0] + '</a>'
                   });
                 });
               </script>
