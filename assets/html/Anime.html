@@ -50,7 +50,7 @@
 <!-- header stuff ig-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container" height="5%">
-    <img class="rounded-circle shadow" src="https://localwaifu.b-cdn.net/logo.png" width="50" style="margin-left: -10%;">
+    <img class="rounded-circle shadow" src="https://localwaifu.b-cdn.net/logo.png" width="50">
     <a class="navbar-brand" href="#"><i class="fas fa-anchor mr-2"></i><strong>Espurr's</strong> Palace</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown-1">
       <ul class="navbar-nav mr-auto">
@@ -95,9 +95,42 @@
                 Status: Ongoing<br>
                 Aired: Nov 17, 2019 to ?</strong>
           </p>
-          <a href="#" class="btn btn-primary btn-round">Sub</a>
+          <a href="#" class="btn btn-primary btn-round" data-toggle="modal" data-target="#Modal003">Sub</a>
         <!--  <a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a>-->
       </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="Modal003" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pb-4 pr-4 pl-4 text-center">
+          <h3 class="heading mt-4">Episodes</h3>
+          <p id="ep_list03">
+            <script>
+              fetch('./json/list02.json')
+              .then((response) => response.json())
+              .then((data) => {
+                data.Episodes.forEach(e => {
+                  var i = e.split(':')
+                  document.getElementById('ep_list03').innerHTML += '<a href="' + i[1] +'" class="btn btn-primary" style="margin-right: 10px; margin-top: 15px;">Ep ' + i[0] + '</a>'
+                });
+              });
+            </script>
+          </p>
+          <p>
+            <em class="text-muted">Report Missing Episodes on our <a href="https://discord.com/invite/z28VSVJj?utm_source=Discord%20Widget&utm_medium=Connect">Discord</a></em>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -136,7 +169,7 @@
             <h3 class="heading mt-4">Episodes</h3>
             <p id="ep_list">
               <script>
-                fetch('./json/list02.json')
+                fetch('./json/list01.json')
                 .then((response) => response.json())
                 .then((data) => {
                   data.Episodes.forEach(e => {
@@ -168,9 +201,42 @@
                 Status: Finished Airing<br>
                 Aired: Jan 15, 2020 to Aug 6, 2020</strong>
           </p>
-          <a href="#" class="btn btn-primary btn-round">Coming Soon~</a>
+          <a href="#" class="btn btn-primary btn-round" data-toggle="modal" data-target="#Modal002">Dub</a>
           <!--<a href="#" class="btn btn-primary btn-round" style="margin-left: 10px;float: left;">Dub</a> -->
       </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="Modal002" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pb-4 pr-4 pl-4 text-center">
+          <h3 class="heading mt-4">Episodes</h3>
+          <p id="ep_list02">
+            <script>
+              fetch('./json/list03.json')
+              .then((response) => response.json())
+              .then((data) => {
+                data.Episodes.forEach(e => {
+                  var i = e.split(':')
+                  document.getElementById('ep_list02').innerHTML += '<a href="' + i[1] +'" class="btn btn-primary" style="margin-right: 10px; margin-top: 15px;">Ep ' + i[0] + '</a>'
+                });
+              });
+            </script>
+          </p>
+          <p>
+            <em class="text-muted">Report Missing Episodes on our <a href="https://discord.com/invite/z28VSVJj?utm_source=Discord%20Widget&utm_medium=Connect">Discord</a></em>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
