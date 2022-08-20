@@ -45,3 +45,20 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+div {
+    overflow-x: scroll !important;
+}
+
+.navbar-expand-lg {
+    min-width: 1400px;
+}
+
+.jumbotron-lg {
+    min-width: 1400px;
+}
+
+#disqus_thread {
+    min-width: 1400px !important;
+}
+
