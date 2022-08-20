@@ -1,14 +1,23 @@
 const fs = require('fs')
 const json = require('../html/json/list02.json')
 
-var jsonfile = []
-json.Episodes.forEach(e => {
-   jsonfile += e
+var jsonfile = json.Episodes
+var content = '['
+function process() {
+   jsonfile.forEach(e => {
+       content =+ `'`
+       content =+ `${e}`
+       content =+ `', `
 })
-console.log(jsonfile)
-var terms = ':sip2:'
 
-fs.writeFile('../html/json/example.json', jsonfile, function(err, data){
+content =+ `]`
+}
+process()
+
+
+console.log(jsonfile)
+
+fs.writeFile('../html/json/example.json', content, function(err, data){
 
     console.log('json updated');
     
